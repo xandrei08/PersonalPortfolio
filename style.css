@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+.custom-size {
+  width: calc(100% - 400px);
+}
+
+.hover:hover {
+  background-color: rgb(221, 129, 23);
+  color: white;
+  border-radius: 4%;
+}
+.custom-animation-left {
+  animation-name: textFadeOutLeft;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes textFadeOutLeft {
+  from {
+    margin-left: 0;
+    opacity: 100%;
+  }
+  to {
+    margin-left: -10%;
+    opacity: 0;
+  }
+}
+
+.custom-animation-right {
+  animation-name: textFadeOutRight;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+@keyframes textFadeOutRight {
+  from {
+    margin-right: 0;
+    opacity: 100%;
+  }
+  to {
+    margin-right: -10%;
+    opacity: 0;
+  }
+}
+
+.custom-animation-nav {
+  animation-name: lightButton;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes lightButton {
+  from {
+    background-color: #fefefe;
+  }
+  50% {
+    background-color: rgb(221, 129, 23);
+    color: #ffffff;
+  }
+  100% {
+    background-color: #fefefe;
+    color: #000000;
+  }
+}
+
+.custom-size2 {
+  width: 623px;
+  height: 500px;
+}
+.custom-animation-slideIn-left {
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+.custom-animation-slideIn-right {
+  animation-name: slideInRIght;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideInRIght {
+  from {
+    margin-right: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-right: 0;
+    opacity: 100%;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    margin-left: -10%;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 100%;
+  }
+}
+
+.slide-two-animation-left {
+  animation-name: secondSlideOutLeft;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+.slide-two-animation-right {
+  animation-name: secondSlideOutRight;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes secondSlideOutLeft {
+  from {
+    margin-left: 0;
+    opacity: 100%;
+  }
+  to {
+    margin-left: -10%;
+    opacity: 0;
+  }
+}
+
+@keyframes secondSlideOutRight {
+  from {
+    margin-right: 0;
+    opacity: 100%;
+  }
+  to {
+    margin-right: -10%;
+    opacity: 0;
+  }
+}
