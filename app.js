@@ -36,6 +36,7 @@ const slidesData = [
   },
 ];
 
+console.log(slidesData.image);
 const elementsObject = {
   leftTitle: document.querySelector(".left-title"),
   leftText: document.querySelector(".left-text"),
@@ -112,6 +113,7 @@ function MainSlidesAnimation() {
     }, 3000);
     setTimeout(() => {
       addMultipleElements("animate-slideIn-left", "animate-slideIn-right");
+
       elementsObject.leftTitle.innerText = slide.title;
       elementsObject.leftText.innerText = slide.text;
       elementsObject.rightImage.src = slide.image;
