@@ -16,23 +16,23 @@ const defaultState = {
                 design principles, ensuring intuitive and engaging interfaces.
                 Always eager to explore the latest web trends and technologies to
                 deliver high-quality, innovative solutions.</p>`,
-  image: "./assets/animGif2.gif",
+  image: "assets/animGif2.gif",
 };
 const slidesData = [
   {
     title: "Personal Project - PoC",
     text: "A proof of concept (PoC) demonstrating an interactive shopping list application. This project explores dynamic UI updates and smooth animations to enhance the user experience, serving as a foundation for potential future development. By leveraging modern JavaScript frameworks and responsive design techniques, the application ensures optimal usability across a range of devices and screen sizes. The PoC incorporates features such as real-time item additions, deletions, and seamless transitions between different list states. It aims to showcase the potential for intuitive interactions, with a focus on user-centric design and performance.",
-    image: "/assets/shopping.jpg",
+    image: "assets/shopping.jpg",
   },
   {
     title: "Maria Casino Project",
     text: "As a developer, I took the project from mockup designs to full functionality, ensuring seamless interactivity and user experience. I implemented a fully responsive design, optimizing the website across all devices for smooth navigation. A key feature of the project is the main header carousel, which I developed to provide smooth and engaging transitions, enhancing the visual appeal of the site. Additionally, I integrated dynamic data through API connectivity, allowing for real-time updates and smooth content flow, ensuring the site remains up-to-date without requiring manual intervention. This combination of responsiveness, interactive elements, and dynamic data integration provides a rich, user-friendly experience across various platforms.",
-    image: "./assets/casino.jpg",
+    image: "assets/casino.jpg",
   },
   {
     title: "Email Marketing & Campaigns",
     text: "As a front-end developer, I gained valuable experience in designing and developing EDMs (Email Design Mockups) for various companies. By leveraging high-standard HTML tables and CSS, I ensured optimal responsiveness across all devices and email clients, including all versions of Microsoft Outlook. Through multiple marketing campaigns, I refined my expertise in optimizing email designs for seamless rendering and a consistent user experience, delivering high-quality results that enhanced engagement and performance.",
-    image: "/assets/image.jpg",
+    image: "assets/image.jpg",
   },
 ];
 
@@ -115,6 +115,7 @@ function MainSlidesAnimation() {
       elementsObject.leftTitle.innerText = slide.title;
       elementsObject.leftText.innerText = slide.text;
       elementsObject.rightImage.src = slide.image;
+      console.log(typeof elementsObject.rightImage.src);
       addMultipleElements("animate-slideIn-left", "animate-slideIn-right");
     }, 4700);
     //Clearing animation for next iteration
