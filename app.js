@@ -22,12 +22,12 @@ const slidesData = [
   {
     title: "Personal Project - PoC",
     text: "A proof of concept (PoC) demonstrating an interactive shopping list application. This project explores dynamic UI updates and smooth animations to enhance the user experience, serving as a foundation for potential future development. By leveraging modern JavaScript frameworks and responsive design techniques, the application ensures optimal usability across a range of devices and screen sizes. The PoC incorporates features such as real-time item additions, deletions, and seamless transitions between different list states. It aims to showcase the potential for intuitive interactions, with a focus on user-centric design and performance.",
-    image: "./assets/ShoppingList.jpg",
+    image: "./assets/shoppinglist.jpg",
   },
   {
     title: "Maria Casino Project",
     text: "As a developer, I took the project from mockup designs to full functionality, ensuring seamless interactivity and user experience. I implemented a fully responsive design, optimizing the website across all devices for smooth navigation. A key feature of the project is the main header carousel, which I developed to provide smooth and engaging transitions, enhancing the visual appeal of the site. Additionally, I integrated dynamic data through API connectivity, allowing for real-time updates and smooth content flow, ensuring the site remains up-to-date without requiring manual intervention. This combination of responsiveness, interactive elements, and dynamic data integration provides a rich, user-friendly experience across various platforms.",
-    image: "./assets/MariaCasino.jpg",
+    image: "./assets/casino.jpg",
   },
   {
     title: "Email Marketing & Campaigns",
