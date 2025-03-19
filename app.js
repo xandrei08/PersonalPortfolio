@@ -27,7 +27,7 @@ const slidesData = [
   {
     title: "Maria Casino Project",
     text: "As a developer, I took the project from mockup designs to full functionality, ensuring seamless interactivity and user experience. I implemented a fully responsive design, optimizing the website across all devices for smooth navigation. A key feature of the project is the main header carousel, which I developed to provide smooth and engaging transitions, enhancing the visual appeal of the site. Additionally, I integrated dynamic data through API connectivity, allowing for real-time updates and smooth content flow, ensuring the site remains up-to-date without requiring manual intervention. This combination of responsiveness, interactive elements, and dynamic data integration provides a rich, user-friendly experience across various platforms.",
-    image: "/assets/casino.jpg",
+    image: "./assets/casino.jpg",
   },
   {
     title: "Email Marketing & Campaigns",
