@@ -16,43 +16,47 @@
   </head>
   <body class="bg-[#fefefe]">
     <main
-      class="mainContainer flex flex-col custom-size mx-auto my-0 gap-[2rem]"
+      class="mainContainer sm:flex-col flex flex-col w-full max-w-[80%] sm:max-w-[90%] md:max-w[80%] lg:max-w-[70%] xl:max-w-[75%] mx-auto gap-8"
     >
-      <nav class="flex flx-row w-full mt-8">
-        <div class="max-w-[10vw]">
+      <nav class="flex xs:flex-col xs:gap-4 sm:flx-row md:flex-row w-full mt-8">
+        <div class="max-w-[10vw] xs:max-w-[20rem] sm:max-w-[15rem]">
           <img src="./assets/Andrei_Sbirciog.JPG" alt="Logo" />
         </div>
-        <ul class="flex flex-row w-full justify-end">
+        <ul
+          class="flex xs:jsutify-start sm:jsutify-start flex-row w-full md:justify-end gap-4"
+        >
           <li>
             <a
               href="#"
-              class="shopElement text-lg font-semibold hover p-[0.5rem]"
-              >Shop UI Project</a
-            >
-          </li>
-          <li>
-            <a href="#" class="msElement text-lg font-semibold hover p-[0.5rem]"
-              >MS Landing Page</a
+              class="shopElement xs:text-[1.1rem] text-lg font-semibold hover:bg-amber-600 hover:text-white p-2"
+              >Shop UI</a
             >
           </li>
           <li>
             <a
               href="#"
-              class="edmElement text-lg font-semibold hover p-[0.5rem]"
-              >EDM Elavon</a
+              class="msElement xs:text-[1.2rem] text-lg font-semibold hover:bg-amber-600 hover:text-white p-2"
+              >LP</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="edmElement xs:text-[1.2rem] text-lg font-semibold hover:bg-amber-600 hover:text-white p-2"
+              >EDM</a
             >
           </li>
         </ul>
       </nav>
-      <div class="mainSelection flex flex-row">
-        <section class="flex flex-row w-full justify-between gap-4">
+      <div class="mainSelection">
+        <section class="flex flex-col sm:flex-row gap-6 justify-start mb-8">
           <div
-            class="leftContainer text-left flex flex-col flex-1 justify-center gap-8 custom-size2"
+            class="leftContainer text-left flex flex-col flex-1 justify-center gap-8"
           >
-            <h1 class="left-title text-5xl font-bold">
+            <h1 class="left-title text-3xl font-bold">
               Hello Everyone, I'm Andrei
             </h1>
-            <p class="left-text text-[1.5rem] font-semibold">
+            <p class="left-text xl:text-2xl font-semibold">
               A creative and detail-oriented Front-End Developer with over three
               years of experience in crafting visually appealing and highly
               responsive web applications. Proficient in
@@ -67,50 +71,86 @@
             </p>
           </div>
           <div
-            class="rightContainer flex flex-row flex-1 justify-end custom-size2"
+            class="rightContainer flex justify-center flex-row flex-1 xl:justify-end"
           >
-            <img src="./assets/animGif2.gif" alt="" class="right-img" />
+            <img
+              src="./assets/animGif2.gif"
+              alt=""
+              class="right-img hover:hue-rotate-60"
+            />
           </div>
         </section>
       </div>
-      <aside class="flex flex-col gap-5">
-        <div class="text-4xl">
-          <a
-            href="https://www.linkedin.com/in/andrei-sbirciog-128a7018a/"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin-in text-[#0077B5]"></i
-          ></a>
-          <a href="https://github.com/xandrei08" target="_blank">
-            <i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            href="mailto:xandreix93@gmail.com?subject=Interview Invitation&body=Thank you"
-          >
-            <i class="fa-solid fa-envelope text-red-600"></i>
-          </a>
-        </div>
-        <div class="flex flex-row gap-8">
+      <div class="flex flex-row flex-auto gap-3">
+        <a
+          href="https://www.linkedin.com/in/andrei-sbirciog-128a7018a/"
+          target="_blank"
+        >
+          <i
+            class="fa-brands fa-linkedin-in xs:text-[6vw] sm:text-[5vw] md:text-[3vw] xl:text-[2.5vw] text-[#0077B5]"
+          ></i
+        ></a>
+        <a href="https://github.com/xandrei08" target="_blank">
+          <i
+            class="fa-brands fa-github xs:text-[6vw] sm:text-[5vw] md:text-[3vw] xl:text-[2.5vw]"
+          ></i
+        ></a>
+        <a
+          href="mailto:xandreix93@gmail.com?subject=Interview Invitation&body=Thank you"
+        >
+          <i
+            class="fa-solid fa-envelope text-red-600 xs:text-[6vw] sm:text-[5vw] md:text-[3vw] xl:text-[2.5vw]"
+          ></i>
+        </a>
+      </div>
+      <div class="flex xs:flex-col sm:flex-row gap-2">
+        <!-- Buttons Section -->
+        <div
+          class="flex flex-col sm:flex-row gap-2 justify-start mb-8 xs:w-full sm:w-1/2"
+        >
           <a
             href="https://wa.me/+44746301517"
             target="_blank"
-            class="bg-amber-600 text-[#ffffff] font-bold text-[1.2rem] cursor-pointer p-[1rem] inline-block rounded-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
-            >Call Me</a
+            class="bg-amber-600 text-white font-bold text-xl text-center p-4 rounded-xl transition-all hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
           >
+            Call Me
+          </a>
           <a
             href="./assets/Resume-Andrei-Sbirciog.pdf"
             download="Resume-Andrei-Sbirciog"
-            class="bg-amber-600 text-[#ffffff] font-bold text-[1.2rem] cursor-pointer p-[1rem] inline-block rounded-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
+            class="bg-amber-600 text-white font-bold text-xl text-center p-4 rounded-xl transition-all hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
           >
             DOWNLOAD MY RESUME
           </a>
           <button
-            class="startApp bg-amber-600 text-[#ffffff] font-bold text-[1.2rem] cursor-pointer p-[1rem] inline-block rounded-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
+            class="startApp bg-amber-600 text-white font-bold text-xl text-center p-4 rounded-xl transition-all hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
           >
             Start App
           </button>
+          <button
+            class="initialState bg-amber-600 text-white font-bold text-xl text-center p-4 rounded-xl transition-all hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500"
+          >
+            Initial State
+          </button>
         </div>
-      </aside>
+        <div
+          class="flex flex-row justify-center xs:w-full sm:w-1/2 rounded-2xl text-6xl gap-6"
+        >
+          <i
+            class="fa-brands fa-html5 hover:text-amber-600 hover:animate-ping"
+          ></i>
+          <i
+            class="fa-brands fa-css3-alt hover:text-blue-600 hover:animate-pulse"
+          ></i>
+          <i
+            class="fa-brands fa-js hover:text-yellow-600 hover:animate-bounce"
+          ></i>
+          <i class="fa-brands fa-react hover:text-cyan-500 hover:rotate-20"></i>
+          <i
+            class="fa-brands fa-node-js hover:text-green-600 hover:skew-12"
+          ></i>
+        </div>
+      </div>
     </main>
     <!-- <script src="app.js"></script> -->
     <script src="./app.js"></script>

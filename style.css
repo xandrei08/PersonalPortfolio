@@ -1,137 +1,86 @@
 @import "tailwindcss";
 
-.custom-size {
-  width: calc(100% - 400px);
-}
+/* Poți adăuga aici animațiile sau stilurile personalizate */
 
-.hover:hover {
-  background-color: rgb(221, 129, 23);
-  color: white;
-  border-radius: 4%;
-}
-.custom-animation-left {
-  animation-name: textFadeOutLeft;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
+@theme {
+  --breakpoint-xs: 20rem;
+  --animate-fedeOut-right: textFadeOutRight 2s ease-in-out forwards;
+  --animate-fadeOut-left: textFadeOutLeft 2s ease-in-out forwards;
+  --animate-navButtons: lightButton 1s ease forwards;
+  --animate-slideIn-left: slideInLeft 1s ease-in-out forwards;
+  --animate-slideIn-right: slideInRIght 1s ease-in-out forwards;
+  --animate-initial-state: initialBtn 1s ease-in-out forwards;
 
-@keyframes textFadeOutLeft {
-  from {
-    margin-left: 0;
-    opacity: 100%;
+  @keyframes textFadeOutRight {
+    from {
+      margin-right: 0;
+      opacity: 100%;
+    }
+    to {
+      margin-right: -10%;
+      opacity: 0;
+    }
   }
-  to {
-    margin-left: -10%;
-    opacity: 0;
+  @keyframes textFadeOutLeft {
+    from {
+      margin-left: 0;
+      opacity: 100%;
+    }
+    to {
+      margin-left: -10%;
+      opacity: 0;
+    }
   }
-}
+  @keyframes lightButton {
+    from {
+      background-color: #fefefe;
+    }
+    50% {
+      background-color: rgb(221, 129, 23);
+      color: #ffffff;
+    }
+    100% {
+      background-color: #fefefe;
+      color: #000000;
+    }
+  }
+  @keyframes slideInRIght {
+    from {
+      margin-right: -10%;
+      opacity: 0;
+    }
+    to {
+      margin-right: 0;
+      opacity: 100%;
+    }
+  }
 
-.custom-animation-right {
-  animation-name: textFadeOutRight;
-  animation-duration: 2s;
-  animation-iteration-count: 1;
-}
-@keyframes textFadeOutRight {
-  from {
-    margin-right: 0;
-    opacity: 100%;
+  @keyframes slideInLeft {
+    from {
+      margin-left: -10%;
+      opacity: 0;
+    }
+    to {
+      margin-left: 0;
+      opacity: 100%;
+    }
   }
-  to {
-    margin-right: -10%;
-    opacity: 0;
-  }
-}
-
-.custom-animation-nav {
-  animation-name: lightButton;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes lightButton {
-  from {
-    background-color: #fefefe;
-  }
-  50% {
-    background-color: rgb(221, 129, 23);
-    color: #ffffff;
-  }
-  100% {
-    background-color: #fefefe;
-    color: #000000;
-  }
-}
-
-.custom-size2 {
-  width: 623px;
-  height: 500px;
-}
-.custom-animation-slideIn-left {
-  animation-name: slideInLeft;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-}
-.custom-animation-slideIn-right {
-  animation-name: slideInRIght;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes slideInRIght {
-  from {
-    margin-right: -10%;
-    opacity: 0;
-  }
-  to {
-    margin-right: 0;
-    opacity: 100%;
+  @keyframes initialBtn {
+    from {
+      opacity: 0;
+      margin-right: -2%;
+    }
+    to {
+      opacity: 1;
+      margin-right: 0;
+    }
   }
 }
 
-@keyframes slideInLeft {
-  from {
-    margin-left: -10%;
-    opacity: 0;
-  }
-  to {
-    margin-left: 0;
-    opacity: 100%;
-  }
+:root {
+  --initial-opacity: 0;
 }
 
-.slide-two-animation-left {
-  animation-name: secondSlideOutLeft;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-}
-.slide-two-animation-right {
-  animation-name: secondSlideOutRight;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-}
-@keyframes secondSlideOutLeft {
-  from {
-    margin-left: 0;
-    opacity: 100%;
-  }
-  to {
-    margin-left: -10%;
-    opacity: 0;
-  }
-}
-
-@keyframes secondSlideOutRight {
-  from {
-    margin-right: 0;
-    opacity: 100%;
-  }
-  to {
-    margin-right: -10%;
-    opacity: 0;
-  }
+.initialState {
+  opacity: var(--initial-opacity);
 }
