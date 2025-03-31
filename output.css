@@ -268,6 +268,9 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
