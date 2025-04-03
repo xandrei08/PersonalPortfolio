@@ -2,6 +2,7 @@ const state = {
   clicked: true,
 };
 let count = 0;
+const logoText = document.querySelector(".logo-text");
 
 const defaultState = {
   title: "Hello Everyone, I'm Andrei",
@@ -36,7 +37,6 @@ const slidesData = [
   },
 ];
 
-console.log(slidesData.image);
 const elementsObject = {
   leftTitle: document.querySelector(".left-title"),
   leftText: document.querySelector(".left-text"),
@@ -47,10 +47,11 @@ const elementsObject = {
   initialState: document.querySelector(".initialState"),
 };
 
-//Prure function to add single element animation
+// function to add single element animation
 function addSingleElementAnimation(element, elementClass, timer) {
   setTimeout(() => {
     element.classList.add(elementClass);
+    logoText.classList.add("animate-logoText");
   }, timer);
 }
 // Pure functions to add multiple elementss
@@ -87,7 +88,6 @@ function initialState(title, text, imageSource, startButton, ...elements) {
 
 function MainSlidesAnimation() {
   const btn = document.querySelector(".startApp");
-
   btn.addEventListener("click", () => {
     const slide = slidesData[count];
     // Disable buttons
@@ -115,7 +115,6 @@ function MainSlidesAnimation() {
       elementsObject.leftTitle.innerText = slide.title;
       elementsObject.leftText.innerText = slide.text;
       elementsObject.rightImage.src = slide.image;
-      console.log(typeof elementsObject.rightImage.src);
       addMultipleElements("animate-slideIn-left", "animate-slideIn-right");
     }, 4700);
     //Clearing animation for next iteration

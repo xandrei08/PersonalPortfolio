@@ -1,8 +1,8 @@
 @import "tailwindcss";
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Poți adăuga aici animațiile sau stilurile personalizate */
-
 @theme {
+  --font-poppins: "Poppins", sans-serif;
   --breakpoint-xs: 20rem;
   --animate-fedeOut-right: textFadeOutRight 2s ease-in-out forwards;
   --animate-fadeOut-left: textFadeOutLeft 2s ease-in-out forwards;
@@ -10,24 +10,25 @@
   --animate-slideIn-left: slideInLeft 1s ease-in-out forwards;
   --animate-slideIn-right: slideInRIght 1s ease-in-out forwards;
   --animate-initial-state: initialBtn 1s ease-in-out forwards;
+  --animate-logoText:logoTextAnimation 0.5s ease-in-out forwards;
 
   @keyframes textFadeOutRight {
     from {
-      margin-right: 0;
-      opacity: 100%;
+      transform: translateX(0);
+      opacity: 1;
     }
     to {
-      margin-right: -10%;
+      transform: translateX(10%);
       opacity: 0;
     }
   }
   @keyframes textFadeOutLeft {
     from {
-      margin-left: 0;
-      opacity: 100%;
+      transform: translateX(0);
+      opacity: 1;
     }
     to {
-      margin-left: -10%;
+      transform: translateX(-10%);
       opacity: 0;
     }
   }
@@ -46,33 +47,44 @@
   }
   @keyframes slideInRIght {
     from {
-      margin-right: -10%;
+      transform:translateX(10%);
       opacity: 0;
     }
     to {
-      margin-right: 0;
-      opacity: 100%;
+      transform:translateX(0)
+      opacity: 1;
     }
   }
 
   @keyframes slideInLeft {
     from {
-      margin-left: -10%;
+      transform:translateX(-10%);
       opacity: 0;
     }
     to {
-      margin-left: 0;
-      opacity: 100%;
+      transform:translateX(0);
+      opacity: 1;
     }
   }
   @keyframes initialBtn {
     from {
       opacity: 0;
-      margin-right: -2%;
+     transform:translateX(-2%);
     }
     to {
       opacity: 1;
-      margin-right: 0;
+      transform:translateX(0);
+    }
+  }
+  @keyframes logoTextAnimation{
+    from{  
+      opacity:0;
+      transform:translateY(-10%);
+    }
+    
+    to{
+      opacity:1;
+      transform:translateY(0%)
     }
   }
 }

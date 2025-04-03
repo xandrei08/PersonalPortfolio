@@ -1,11 +1,11 @@
 # Portfolio Project
 
-Acesta este un proiect simplu de portofoliu utilizând Tailwind CSS pentru stilizare.
+This is a simple portfolio project using HTMl, Javascript and Tailwind.
 
-## Înainte de a începe
+## Before You Start
 
-1. Clonează sau descarcă proiectul:
+1. Clone or download the project:
 
-2. Instaleaza dependitele - npm install
+2. Install dependencies - npm install
 
-3. Ruleaza Tailwind  - npm run watch.
+3. Run Tailwind  - npm run watch.
