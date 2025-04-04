@@ -1,5 +1,5 @@
 const state = {
-  clicked: true,
+  clicked: false,
 };
 let count = 0;
 const logoText = document.querySelector(".logo-text");
@@ -85,10 +85,11 @@ function initialState(title, text, imageSource, startButton, ...elements) {
     count = 0;
   });
 }
-
 function MainSlidesAnimation() {
   const btn = document.querySelector(".startApp");
   btn.addEventListener("click", () => {
+    if (state.clicked) return;
+    state.clicked = true;
     const slide = slidesData[count];
     // Disable buttons
     btn.disabled = true;
@@ -126,20 +127,21 @@ function MainSlidesAnimation() {
         "animate-fedeOut-right",
         "animate-slideIn-right"
       );
-      // Activate buttons
-      btn.disabled = false;
-      elementsObject.initialState.disabled = false;
-
       btn.innerText = "Next slide";
       elementsObject.initialState.classList.add("animate-initial-state");
     }, 5500);
+    setTimeout(() => {
+      // Activate buttons
+      btn.disabled = false;
+      elementsObject.initialState.disabled = false;
+      state.clicked = false;
+    }, 5600);
 
     if (count < slidesData.length - 1) {
       ++count;
     } else {
       setTimeout(() => {
         btn.innerText = "Start again";
-        state.clicked = true;
         count = 0;
       }, 5600);
     }
