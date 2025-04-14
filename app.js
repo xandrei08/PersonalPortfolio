@@ -5,6 +5,9 @@ import {
   removeClasses,
   initialState,
 } from "./scripts/Utility.js";
+import { showBanners } from "./scripts/banners.js";
+
+showBanners();
 
 const state = {
   clicked: false,
@@ -113,6 +116,7 @@ function MainSlidesAnimation() {
         count = 0;
       }, 5600);
     }
+
     setTimeout(() => {
       initialState(
         defaultState.title,

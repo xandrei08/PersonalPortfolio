@@ -11,6 +11,8 @@
   --animate-slideIn-right: slideInRIght 1s ease-in-out forwards;
   --animate-initial-state: initialBtn 1s ease-in-out forwards;
   --animate-logoText:logoTextAnimation 0.5s ease-in-out forwards;
+  --animate-banners:bannersAnimation 1s ease-in-out forwards;
+  --animate-bannersExit: bannersExit 1s ease-in-out forwards;
 
   @keyframes textFadeOutRight {
     from {
@@ -85,6 +87,24 @@
     to{
       opacity:1;
       transform:translateY(0%)
+    }
+  }
+  @keyframes bannersAnimation{
+    from{
+      transform:translateX(100%);
+    }
+    to{
+      transofmr:tranlsateX(0);
+    }
+  }
+  @keyframes bannersExit{
+    from{
+      transform:translateX(0);
+      display:flex;
+    }
+    to{
+      transform:translateX(-100%);
+      display:hidden;
     }
   }
 }
