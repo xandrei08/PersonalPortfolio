@@ -213,6 +213,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }

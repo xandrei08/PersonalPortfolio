@@ -8,14 +8,14 @@ export const elementsObject = {
   initialState: document.querySelector(".initialState"),
 };
 
-// Pure functions to add multiple elementss
+//functions to add multiple elementss
 export function addMultipleElements(element1, element2) {
   elementsObject.leftTitle.classList.add(element1);
   elementsObject.leftText.classList.add(element1);
   elementsObject.rightImage.classList.add(element2);
 }
 
-//Pure functions remove Navbar Classes for animation
+//functions remove Navbar Classes for animation
 export function navRemoveClasses(element1) {
   elementsObject.navShopElement.classList.remove(element1);
   elementsObject.navMsElement.classList.remove(element1);
