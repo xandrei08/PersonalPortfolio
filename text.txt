@@ -1,0 +1,49 @@
+    <div
+        class="banners-content flex flex-col justify-evenly items-center w-full min-h-screen"
+      >
+        <h1 class="text-center text-3xl font-bold text-black">
+          Banners campaigns
+        </h1>
+        <div
+          class="flex xs:flex-col lg:flex-row gap-4 justify-evenly items-center w-full"
+        >
+          <div class="flex flex-col gap-8">
+            <iframe
+              src="https://c.bannerflow.net/scripts/iframe?did=5cf6638e8e4e100001a17710&deeplink=on&a=650c27ab37364c4caf91288e&redirecturl="
+              style="border: none; width: 300px; height: 250px"
+              class="banner1"
+              frameborder="0"
+              scrolling="no"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              src="https://c.bannerflow.net/scripts/iframe?did=5cf6638e8e4e100001a17710&deeplink=on&a=666b361ed5c98ccdeb080cb9&redirecturl="
+              style="border: none; width: 300px; height: 250px"
+              class="banner2"
+              frameborder="0"
+              scrolling="no"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="flex xs:flex-col lg:flex-row justify-center">
+            <iframe
+              src="https://c.bannerflow.net/scripts/iframe?did=5cf6638e8e4e100001a17710&deeplink=on&a=65a9013301fff79f779c176c&redirecturl="
+              style="border: none; width: 300px; height: 250px"
+              frameborder="0"
+              class="banner3"
+              scrolling="no"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="flex xs:flex-col lg:flex-row">
+            <iframe
+              src="https://c.bannerflow.net/scripts/iframe?did=5cf6638e8e4e100001a17710&deeplink=on&a=63be94a37c127b7a6179b4ed&redirecturl="
+              style="border: none; width: 300px; height: 600px"
+              frameborder="0"
+              class="banner4"
+              scrolling="no"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>

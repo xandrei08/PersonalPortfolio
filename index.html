@@ -9,7 +9,7 @@
     />
     <title>Andrei Sbirciog - Front-End Developer | Portfolio</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <script
@@ -41,7 +41,7 @@
             <a
               href="https://xandrei08.github.io/OnlineStore-PoC-2025/"
               id="store"
-              class="shopElement xs:text-[1.1rem] text-lg font-semibold hover:bg-amber-600 hover:text-white p-2"
+              class="shopElement xs:text-[1.1rem] text-lg font-semibold hover:bg-amber-600 hover:text-white p-2 text-shadow-md"
               target="_blank"
               rel="noopener noreferrer"
               >Shop UI</a
@@ -50,7 +50,7 @@
           <li>
             <a
               href="https://landingpage.bannerflow.com/showcase/unibet/5fbe1d1cce75243c1011f472/65841ebfc259e3f5db2a1762/65841ec0c259e3f5db2a1779"
-              class="msElement xs:text-[1.2rem] text-lg font-semibold hover:bg-amber-600 hover:text-white p-2"
+              class="msElement xs:text-[1.2rem] text-lg font-semibold hover:bg-amber-600 hover:text-white p-2 text-shadow-md"
               target="_blank"
               rel="noopener noreferrer"
               >LP</a
@@ -59,7 +59,7 @@
           <li>
             <a
               href="https://xandrei08.github.io/EDM/"
-              class="edmElement xs:text-[1.2rem] text-lg font-semibold hover:bg-amber-600 hover:text-white p-2"
+              class="edmElement xs:text-[1.2rem] text-lg font-semibold hover:bg-amber-600 hover:text-white p-2 text-shadow-md"
               target="_blank"
               rel="noopener noreferrer"
               >EDM</a
@@ -72,15 +72,15 @@
           <div
             class="leftContainer text-left flex flex-col flex-1 justify-center gap-8"
           >
-            <h1 class="left-title text-3xl font-bold">
+            <h1 class="left-title text-4xl font-bold text-shadow-lg">
               Hello Everyone, I'm Andrei
             </h1>
-            <p class="left-text xl:text-2xl font-semibold">
+            <p class="left-text xl:text-2xl font-semibold text-shadow-lg">
               A creative and detail-oriented Front-End Developer with over three
               years of experience in crafting visually appealing and highly
               responsive web applications. Proficient in
               <span class="font-bold text-amber-600"
-                >HTML, CSS, JavaScript, React, Tailwind,</span
+                >HTML, CSS, JavaScript, React, Tailwind, Typescript</span
               >
               and other modern front-end technologies, with a strong passion for
               building seamless and user-friendly experiences. Skilled in UI/UX
@@ -178,56 +178,183 @@
         </div>
       </div>
       <div
-        class="banners-content invisible flex flex-col justify-evenly items-center backdrop-blur-lg w-full min-h-screen absolute top-0 right-0 bg-black"
+        class="flex flex-col justify-evenly items-center w-full min-h-screen gap-8"
       >
-        <h1 class="text-center text-3xl font-bold text-white">
-          Banners campaigns
-        </h1>
-        <div
-          class="flex xs:flex-col lg:flex-row gap-4 justify-evenly items-center w-full"
-        >
-          <div class="flex flex-col gap-8">
-            <iframe
-              src="https://c.bannerflow.net/scripts/iframe?did=5cf6638e8e4e100001a17710&deeplink=on&a=650c27ab37364c4caf91288e&redirecturl="
-              style="border: none; width: 300px; height: 250px"
-              class="banner1 invisible"
-              frameborder="0"
-              scrolling="no"
-              allowfullscreen
-            ></iframe>
-            <iframe
-              src="https://c.bannerflow.net/scripts/iframe?did=5cf6638e8e4e100001a17710&deeplink=on&a=666b361ed5c98ccdeb080cb9&redirecturl="
-              style="border: none; width: 300px; height: 250px"
-              class="banner2 invisible"
-              frameborder="0"
-              scrolling="no"
-              allowfullscreen
-            ></iframe>
+        <h2 class="text-center text-3xl font-bold pb-8 text-shadow-lg">
+          Front-End Development for Digital Campaigns
+        </h2>
+        <div class="flex flex-col gap-8 w-full items-center">
+          <div class="flex xs:flex-col md:flex-row gap-8 items-center">
+            <div class="iframe-banner1 flex justify-center flex-1">
+              <iframe
+                src="https://c.bannerflow.net/scripts/iframe?did=5cf6638e8e4e100001a17710&deeplink=on&a=650c27ab37364c4caf91288e&redirecturl="
+                class="banner1 shadow-md shadow-gray-600 w-[300px] h-[250px]"
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="banner1-text flex justify-center flex-1 p-2">
+              <p
+                class="px-8 xs:text-lg/6 lg:text-2xl/9 text-gray-600 font-semibold items-center text-shadow-lg xs:text-center md:text-left"
+              >
+                Throughout my professional experience, I have successfully
+                delivered over
+                <span class="font-bold italic"
+                  >30 high-impact marketing campaigns</span
+                >
+                for leading clients such as
+                <span class="text-amber-600 font-bold"
+                  >Unibet, Otto, and Maria Casino</span
+                >, designing and building scalable, cross-platform digital
+                solutions for both
+                <span class="font-bold italic"> B2C and B2B </span> sectors.
+              </p>
+            </div>
           </div>
-          <div class="flex xs:flex-col lg:flex-row justify-center">
-            <iframe
-              src="https://c.bannerflow.net/scripts/iframe?did=5cf6638e8e4e100001a17710&deeplink=on&a=65a9013301fff79f779c176c&redirecturl="
-              style="border: none; width: 300px; height: 250px"
-              frameborder="0"
-              class="banner3 invisible"
-              scrolling="no"
-              allowfullscreen
-            ></iframe>
+          <div class="flex xs:flex-col md:flex-row gap-8 items-center">
+            <div class="banner2-text flex justify-center flex-1 items-center">
+              <p
+                class="px-8 xs:text-lg/6 lg:text-2xl/9 text-gray-600 font-semibold text-shadow-lg xs:text-center md:text-left"
+              >
+                Developing
+                <span class="font-bold italic"
+                  >responsive and cross-device </span
+                >landing pages and microsites using
+                <span class="font-bold text-amber-600"
+                  >HTML5, CSS3, and modern Vanilla JavaScript</span
+                >, optimized for desktop, tablet, and mobile users. Crafting
+                high-engagement animated components with
+                <span class="font-bold italic">GSAP</span> to elevate user
+                experience and interaction rates.
+              </p>
+            </div>
+            <div class="iframe-banner2 flex justify-center flex-1">
+              <iframe
+                src="https://c.bannerflow.net/scripts/iframe?did=5cf6638e8e4e100001a17710&deeplink=on&a=666b361ed5c98ccdeb080cb9&redirecturl="
+                style="border: none; width: 300px; height: 250px"
+                class="banner2 shadow-md shadow-gray-600"
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
-          <div class="flex xs:flex-col lg:flex-row">
-            <iframe
-              src="https://c.bannerflow.net/scripts/iframe?did=5cf6638e8e4e100001a17710&deeplink=on&a=63be94a37c127b7a6179b4ed&redirecturl="
-              style="border: none; width: 300px; height: 600px"
-              frameborder="0"
-              class="banner4 invisible"
-              scrolling="no"
-              allowfullscreen
-            ></iframe>
+          <div class="flex xs:flex-col md:flex-row gap-8 items-center">
+            <div class="iframe-banner3 flex justify-center flex-1">
+              <iframe
+                src="https://c.bannerflow.net/scripts/iframe?did=5cf6638e8e4e100001a17710&deeplink=on&a=65a9013301fff79f779c176c&redirecturl="
+                style="border: none; width: 300px; height: 250px"
+                frameborder="0"
+                class="banner3 shadow-md shadow-gray-600"
+                scrolling="no"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="banner3-text flex justify-center flex-1 items-center">
+              <p
+                class="px-8 xs:text-lg/6 lg:text-2xl/9 text-gray-600 font-semibold text-shadow-lg xs:text-center md:text-left"
+              >
+                <span class="font-bold text-gray-600 italic">Integrating </span
+                >dynamic content and real-time data via APIs, enhancing site
+                interactivity and performance. Implementing
+                <span class="font-bold text-amber-600"
+                  >website performance optimizations</span
+                >
+                through asset minification, code splitting, and lazy loading,
+                <span class="font-bold text-gray-600 italic">
+                  achieving a 12% increase in loading speed</span
+                >
+                verified by Lighthouse and WebPageTest.
+              </p>
+            </div>
+          </div>
+          <div class="flex xs:flex-col md:flex-row gap-8 items-center">
+            <div class="banner4-text flex justify-center flex-1 items-center">
+              <p
+                class="px-8 xs:text-lg/6 lg:text-2xl/9 text-gray-600 font-semibold text-shadow-lg xs:text-center md:text-left"
+              >
+                <span class="font-bold text-gray-600 italic"
+                  >Supporting and improving CI/CD</span
+                >
+                deployment pipelines, ensuring reliable and efficient campaign
+                launches with minimal downtime.<span
+                  class="font-bold text-gray-600 italic"
+                  >Delivering</span
+                >
+                a wide range of digital assets (banners, promotional elements,
+                maintenance modules) in line with brand and UX guidelines
+                Working closely with internal teams and clients to define needs,
+                <span class="font-bold text-amber-600"
+                  >refine solutions, and deliver outstanding results under agile
+                  workflows</span
+                >. This experience strengthened my ability to build scalable,
+                high-performance, and fully optimized front-end solutions that
+                align both with technical best practices and business goals.
+              </p>
+            </div>
+            <div class="iframe-banner4 flex justify-center flex-1">
+              <iframe
+                src="https://c.bannerflow.net/scripts/iframe?did=5cf6638e8e4e100001a17710&deeplink=on&a=63be94a37c127b7a6179b4ed&redirecturl="
+                style="border: none; width: 300px; height: 600px"
+                frameborder="0"
+                class="banner4 shadow-md shadow-gray-600"
+                scrolling="no"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
+      <footer class="bg-gray-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+          <div
+            class="flex xs:flex-col md:flex-row justify-between items-center gap-4"
+          >
+            <div>
+              <p class="text-md text-gray-400">
+                © 2025 Andrei Sbirciog. All rights reserved.
+              </p>
+            </div>
+            <div class="flex space-x-6">
+              <a
+                href="mailto:xandreix93@gmail.com"
+                target="_blank"
+                class="text-gray-400 hover:text-white text-md"
+                >Email</a
+              >
+              <a
+                href="https://www.linkedin.com/in/andrei-sbirciog-128a7018a/"
+                target="_blank"
+                class="text-gray-400 hover:text-white text-md"
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/xandrei08"
+                target="_blank"
+                class="text-gray-400 hover:text-white text-md"
+                >GitHub</a
+              >
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <div class="mt-4 text-center">
+              <p class="text-xl text-gray-400">
+                „Create with passion, learn from every project”
+              </p>
+            </div>
+            <div class="mt-4 text-center">
+              <a
+                href="https://www.linkedin.com/in/andrei-sbirciog-128a7018a/"
+                target="_blank"
+                class="px-6 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-500"
+                >Get in touch today</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
-    <!-- <script src="app.js"></script> -->
     <script type="module" src="./scripts/Utility.js"></script>
     <script type="module" src="./app.js"></script>
   </body>

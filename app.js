@@ -5,9 +5,6 @@ import {
   removeClasses,
   initialState,
 } from "./scripts/Utility.js";
-import { showBanners } from "./scripts/banners.js";
-
-showBanners();
 
 const state = {
   clicked: false,
