@@ -45,3 +45,41 @@ export function initialState(
     count = 0;
   });
 }
+
+export function scrollPage(element) {
+  const showArrow = document.querySelector(element);
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 0) {
+      showArrow.style.display = "block";
+      changeNavBar("add", "add", "./assets/andreisb2.png");
+    } else {
+      showArrow.style.display = "none";
+      changeNavBar("remove", "remove", "./assets/andreisb.png");
+    }
+  });
+  showArrow.addEventListener("click", () => {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+}
+
+function changeNavBar(action1, action2, imageSrc) {
+  const navBar = document.querySelector("nav");
+  const navLogo = document.querySelector(".nav-logo");
+  const navElements = navBar.querySelectorAll("ul li a");
+  if (action1 === "add") {
+    navBar.classList.add("bg-black/80");
+  } else if (action1 === "remove") {
+    navBar.classList.remove("bg-black/80");
+  }
+
+  if (action2 === "add") {
+    navElements.forEach((item) => item.classList.add("text-white"));
+  } else if (action2 === "remove") {
+    navElements.forEach((item) => item.classList.remove("text-white"));
+  }
+
+  navLogo.src = imageSrc;
+}

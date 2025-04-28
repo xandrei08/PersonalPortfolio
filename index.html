@@ -22,20 +22,23 @@
     <main
       class="mainContainer sm:flex-col flex flex-col w-full max-w-[80%] sm:max-w-[90%] md:max-w[80%] lg:max-w-[70%] xl:max-w-[75%] mx-auto gap-8"
     >
-      <nav class="flex xs:flex-col xs:gap-4 sm:flx-row md:flex-row w-full mt-8">
-        <div class="max-w-[10vw] xs:max-w-[20rem] sm:max-w-[15rem]">
+      <nav
+        class="flex items-center sticky top-0 xs:flex-col xs:gap-4 sm:flx-row md:flex-row w-full z-20"
+      >
+        <div class="[10vw] xs:max-w-[20rem] sm:max-w-[15rem] p-1">
           <img
             src="./assets/andreisb.png"
+            class="nav-logo"
             alt="Andrei Sbirciog - Front-End Developer"
           />
           <p
-            class="logo-text text-xl font-bold font-poppins italic opacity-0 text-emerald-700"
+            class="logo-text text-xl font-bold font-poppins italic opacity-0 text-emerald-700 pl-2"
           >
             Quality over Quantity
           </p>
         </div>
         <ul
-          class="flex xs:jsutify-start sm:jsutify-start flex-row w-full md:justify-end gap-4"
+          class="flex xs:jsutify-start sm:jsutify-start flex-row w-full md:justify-end gap-4 p-4"
         >
           <li>
             <a
@@ -73,7 +76,7 @@
             class="leftContainer text-left flex flex-col flex-1 justify-center gap-8"
           >
             <h1 class="left-title text-4xl font-bold text-shadow-lg">
-              Hello Everyone, I'm Andrei
+              Let's build astonished projects together.
             </h1>
             <p class="left-text xl:text-2xl font-semibold text-shadow-lg">
               A creative and detail-oriented Front-End Developer with over three
@@ -192,6 +195,7 @@
                 frameborder="0"
                 scrolling="no"
                 allowfullscreen
+                loading="lazy"
               ></iframe>
             </div>
             <div class="banner1-text flex justify-center flex-1 p-2">
@@ -237,6 +241,7 @@
                 frameborder="0"
                 scrolling="no"
                 allowfullscreen
+                loading="lazy"
               ></iframe>
             </div>
           </div>
@@ -249,6 +254,7 @@
                 class="banner3 shadow-md shadow-gray-600"
                 scrolling="no"
                 allowfullscreen
+                loading="lazy"
               ></iframe>
             </div>
             <div class="banner3-text flex justify-center flex-1 items-center">
@@ -301,12 +307,13 @@
                 class="banner4 shadow-md shadow-gray-600"
                 scrolling="no"
                 allowfullscreen
+                loading="lazy"
               ></iframe>
             </div>
           </div>
         </div>
       </div>
-      <footer class="bg-gray-800 text-white py-16">
+      <footer class="bg-black/80 text-white py-16">
         <div class="max-w-7xl mx-auto px-4">
           <div
             class="flex xs:flex-col md:flex-row justify-between items-center gap-4"
@@ -354,6 +361,11 @@
           </div>
         </div>
       </footer>
+      <div class="scrollUp hidden fixed bottom-50 xs:right-5 lg:right-30 z-30">
+        <i
+          class="fa-solid fa-arrow-up cursor-pointer animate-bounce text-2xl"
+        ></i>
+      </div>
     </main>
     <script type="module" src="./scripts/Utility.js"></script>
     <script type="module" src="./app.js"></script>

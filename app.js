@@ -5,6 +5,9 @@ import {
   removeClasses,
   initialState,
 } from "./scripts/Utility.js";
+import { scrollPage } from "./scripts/Utility.js";
+
+scrollPage(".scrollUp");
 
 const state = {
   clicked: false,
