@@ -16,7 +16,7 @@ let count = 0;
 const logoText = document.querySelector(".logo-text");
 
 const defaultState = {
-  title: "Hello Everyone, I'm Andrei",
+  title: "Let's build astonished projects together.",
   text: `<p>    A creative and detail-oriented Front-End Developer with over three
                 years of experience in crafting visually appealing and highly
                 responsive web applications. Proficient in
